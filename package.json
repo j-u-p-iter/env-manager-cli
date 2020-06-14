@@ -8,7 +8,7 @@
   },
   "scripts": {
     "commit": "jupiter-scripts precommit --allowJs",
-    "build": "jupiter-scripts build",
+    "build": "jupiter-scripts build --allowJs",
     "build:watch": "watch 'yarn run build && yarn run changePermission' ./src",
     "lint": "jupiter-scripts lint --format codeFrame",
     "lint:fix": "yarn run lint --fix",

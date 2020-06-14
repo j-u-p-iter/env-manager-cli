@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { createEnvManager } from "@j.u.p.iter/env-manager";
-import { argv } from "yargs";
+const { createEnvManager } = require("@j.u.p.iter/env-manager");
+const { argv } = require("yargs");
 
 const runCLI = () => {
   const {

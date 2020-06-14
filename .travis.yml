@@ -13,8 +13,8 @@ node_js:
 jobs:
   include:
     - stage: validate
-      script: jupiter-scripts build
       script: jupiter-scripts test  --noWatch --silent --no-cache
+      script: jupiter-scripts build
     - stage: deploy
       script: yarn run build
       after_success: jupiter-scripts deploy

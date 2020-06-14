@@ -7,7 +7,7 @@ describe('envManagerCLI', () => {
   describe('createConfig', () => {
     describe('with default names', () => {
       it('works properly', async () => {
-        const pathToBin = path.resolve(__dirname, '../..', './dist/lib/index.js');
+        const pathToBin = path.resolve(__dirname, '..', 'index.js');
         const pathToFile = path.resolve(__dirname, './forCreateConfigTest');
 
         await executeCommand({ 
@@ -34,7 +34,7 @@ describe('envManagerCLI', () => {
 
     describe('with custom names', () => {
       it('works properly', async () => {
-        const pathToBin = path.resolve(__dirname, '../..', './dist/lib/index.js');
+        const pathToBin = path.resolve(__dirname, '..', 'index.js');
         const pathToFile = path.resolve(__dirname, './forCreateConfigTest');
 
         await executeCommand({ 
@@ -67,7 +67,7 @@ describe('envManagerCLI', () => {
   describe('decodeConfig', () => {
     describe('with default names', () => {
       it('works properly', async () => {
-        const pathToBin = path.resolve(__dirname, '../..', './dist/lib/index.js');
+        const pathToBin = path.resolve(__dirname, '..', 'index.js');
         const pathToFile = path.resolve(__dirname, './forDecodeConfigTest');
 
         await executeCommand({ 
@@ -94,7 +94,7 @@ describe('envManagerCLI', () => {
 
     describe('with custom names', () => {
       it('works properly', async () => {
-        const pathToBin = path.resolve(__dirname, '../..', './dist/lib/index.js');
+        const pathToBin = path.resolve(__dirname, '..', 'index.js');
         const pathToFile = path.resolve(__dirname, './forDecodeConfigTest');
 
         await executeCommand({ 
