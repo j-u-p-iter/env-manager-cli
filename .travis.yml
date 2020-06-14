@@ -14,7 +14,7 @@ jobs:
   include:
     - stage: validate
       script: jupiter-scripts test  --noWatch --silent --no-cache
-      script: jupiter-scripts build
+      script: yarn run build
     - stage: deploy
       script: yarn run build
       after_success: jupiter-scripts deploy
